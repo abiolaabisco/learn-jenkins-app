@@ -25,7 +25,7 @@ pipeline {
                     node --version
                     echo "build with docker"
                     npm ci
-                    npm run bulld 
+                    npm run build
                     ls -ltra
                 '''
             }
