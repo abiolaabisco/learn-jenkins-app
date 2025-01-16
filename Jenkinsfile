@@ -21,8 +21,12 @@ pipeline {
             steps {
                 sh '''
                     ls -ltra
+                    npm --version
+                    node --version
                     echo "build with docker"
-                    touch container-yes.txt
+                    npm ci
+                    npm run bulld 
+                    ls -ltra
                 '''
             }
         }
